@@ -23,7 +23,7 @@ string Format::ElapsedTime(long seconds) {
 
 string Format::ProgressBar(float percent) {
   std::string result{"0%"};
-  int size{100};
+  int size{75};
   float bars{(percent * size)};
 
   for (int i{0}; i < size; ++i) {
